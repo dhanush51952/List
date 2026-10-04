@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lists and Choices</title>
+</head>
+<body>
+  <h1>Lists and Choices</h1>
+
+  <h2>Things to pack</h2>
+  <ul>
+    <li>Notebook and a pen</li>
+    <li>Water bottle</li>
+    <li>Camera or phone</li>
+    <li>Comfortable walking shoes</li>
+    <li>Sun protection</li>
+    <li>Travel documents and booking details</li>
+  </ul>
+
+  <h2>Steps for a good cup of tea</h2>
+  <ol>
+    <li>Heat fresh water.</li>
+    <li>Steep the tea for a few minutes.</li>
+    <li>Add milk, lemon, or a little sweetener if you like.</li>
+    <li>Pour, take a seat, and enjoy.</li>
+  </ol>
+
+  <h2>A nested list</h2>
+  <ul>
+    <li>Explore
+      <ul>
+        <li>Find a new walking route</li>
+        <li>Visit a local market</li>
+        <li>Try a neighborhood cafe</li>
+      </ul>
+    </li>
+    <li>Make something
+      <ul>
+        <li>Cook a new recipe</li>
+        <li>Take a few photos</li>
+      </ul>
+    </li>
+    <li>Take time to recharge</li>
+  </ul>
+
+  <h2>Choose a weekend plan</h2>
+  <label for="plan">Plan:</label>
+  <select id="plan" name="plan">
+    <option value="">Choose one</option>
+    <option value="walk">A morning walk</option>
+    <option value="museum">A museum visit</option>
+    <option value="cafe">A cafe afternoon</option>
+    <option value="market">A local market stroll</option>
+    <option value="creative">A creative afternoon at home</option>
+  </select>
+
+  <h2>Set your reading goal</h2>
+  <label for="pages">Pages: <output id="pages-value">20</output></label>
+  <input id="pages" name="pages" type="range" min="5" max="100" value="20" oninput="document.getElementById('pages-value').value = this.value">
+
+  <h2>Choose a learning focus</h2>
+  <ul>
+    <li>Build: HTML, CSS, and JavaScript</li>
+    <li>Practice: responsive design and accessibility</li>
+    <li>Explore: React and database fundamentals</li>
+  </ul>
+</body>
+</html>
